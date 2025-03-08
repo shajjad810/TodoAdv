@@ -17,10 +17,11 @@
 
     const newDivEl = document.createElement("div");
     newDivEl.setAttribute("id", ctr);
-    ctr = ctr + 1;
+    
     newDivEl.innerHTML = "<div>" + value + '</div><button onclick="deleteTodo(' + ctr + ')">delete</button>';
 
     document.querySelector("body").appendChild(newDivEl)
+    ctr = ctr + 1;
   }
 </script>
 
